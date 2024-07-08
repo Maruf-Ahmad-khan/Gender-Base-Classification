@@ -1,0 +1,279 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/boovtstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS --> 
+    <link href="{{ url_for('static',filename = 'css/bootstrap.min.css')  }}" rel="stylesheet">
+
+    <title>Gender Base Classification Projects</title>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <header  style="background-color: lightseagreen;" class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <div class="site-logo">
+            <a href="/" class="d-block">
+              <img style="border-radius: 25px;" src="{{ url_for('static',filename = 'image/PIET logo with tagline.jpg')}}" alt="Image" class="img-fluid">
+            </a>
+          </div>
+          <div class="mr-auto">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li class="active">
+                    <a href="/" style="color:white; margin-right: 15px;"><button type="button"  class="btn btn-outline" >Home</button></a>
+                  
+                </li>
+                <br>
+                 <li>
+                    <a href="/aboutusnew" style="color:white; margin-right: 10px;"><button type="button"  class="btn btn-outline" > Aboutus </button></a>
+                 </li>
+                 <br>
+                <br>
+                <li>
+                  <a href="https://github.com/Maruf-Ahmad-khan?tab=repositories" target="_blank" style="color: blue; margin-right: 10px; text-align: left; "><button type="button"  class="btn btn-outline-primary" >Github</button></a>
+                </li>
+                <br>
+                <li>
+                  <a href="https://www.linkedin.com/in/maruf-khan-1516a4224/" target="_blank" style="color: blue; margin-right: 10px; text-align: left; "><button type="button"  class="btn btn-outline-primary" >linkedin</button></a>
+                </li>
+                
+              </ul>                                                                 
+            </nav>
+          </div>
+          
+         
+        </div>
+      </div>
+
+    </header>
+    <hr>
+
+    <br>
+    <center>
+    <h2 class="mb-0" style="color: white;" >Projects</h2><br>
+</center>
+<br>
+    <div class="site-section ftco-subscribe-1 site-blocks-cover pb-4" >
+        <div class="container">
+          <div class="row align-items-end">
+            <div class="col-lg-7">
+              <h3 class="mb-0" style="color: black;" >What is a machine learning model?</h3><br>
+              <p>Machine learning (ML) is a type of artificial intelligence (AI) that allows software applications to become more accurate at predicting outcomes without being explicitly programmed to do so. Machine learning algorithms use historical data as input to predict new output values.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="form1" style="border-radius: 25px;background-color: lightseagreen;">
+        <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <div class="card mb-3">
+                        <div class="card">
+                        <p class="card-text"><center><b>Model Deployment QR Code:</b></center></p>
+                        <img style="max-height: 350px;" src="{{ url_for('static',filename = 'image/project.png')}}"
+                        
+                            class="card-img-top" alt="...">
+                        
+                            <div class="card-body">
+                            <h5 class="card-title">House Price Prediction</h5>
+                            <p class="card-text"><li>Linear Regression is the supervised Machine Learning model in which the model finds the best fit linear line between the independent and dependent variable.It performs a regression task. Regression models a target prediction value based on independent variables.Linear Regression is a machine learning algorithm based on supervised learning. It performs a regression task. Regression models a target prediction value based on independent variables. It is mostly used for finding out the relationship between variables and forecasting.</li></p>
+                            <a href="https://mlpr1.herokuapp.com" target="_blank" ><button type="button" class="btn btn-outline-primary">Linear Regression Model for House Price Prediction&#9655;</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="card mb-3">
+                    <div class="card">
+                        <p class="card-text"><center><b>Model Deployment QR Code:</b></center></p>
+                        <img style="max-height: 350px;" src="{{ url_for('static',filename = 'image/projecta.png')  }}"
+                        
+                        class="card-img-top" alt="...">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">Item Purchase Prediction</h5>
+                            <p class="card-text"><li>Decision tree algorithm falls under the category of supervised learning. They can be used to solve both regression and classification problems.Decision Tree is the most powerful and popular tool for classification and prediction. A Decision tree is a flowchart-like tree structure, where each internal node denotes a test on an attribute, each branch represents an outcome of the test, and each leaf node (terminal node) holds a class label.</li></p>
+                            <a href="https://marufmlprojects.herokuapp.com/"><button type="button" class="btn btn-outline-primary">Decision Tree Clasification Model for Item Purchase Prediction&#9655;</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="card mb-3">
+                    <div class="card">
+                        <p class="card-text"><center><b>Model Deployment QR Code:</b></center></p>
+                        <img style="max-height: 350px;" src="{{ url_for('static',filename = 'image/projectf.png')  }}"
+                        
+                        class="card-img-top" alt="...">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">Item Purchase Prediction using SVM and RF</h5>
+                            <p class="card-text"><li>Support Vector Machine(SVM) is a supervised machine learning algorithm used for both classification and regression. Though we say regression problems as well its best suited for classification.</li><li>The Random forest classifier creates a set of decision trees from a randomly selected subset of the training set. It is basically a set of decision trees (DT) from a randomly selected subset of the training set and then It collects the votes from different decision trees to decide the final prediction.</li></p>
+                            <a href="https://marufkhan-ahmad-svmandrandomforest-app-802c0o.streamlitapp.com/"target="_blank"><button type="button" class="btn btn-outline-primary">SVM and Random Forest Model for Item Purchase Prediction&#9655;</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="col-xs-12 col-md-4">
+                <div class="card mb-3">
+                    <div class="card">
+                        <p class="card-text"><center><b>Model Deployment QR Code:</b></center></p>
+                        <img style="max-height: 350px;" src="{{ url_for('static',filename = 'image/projectm.png')  }}"
+                        
+                        class="card-img-top" alt="...">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">Titanic Survival using KNN</h5>
+
+                            <p class="card-text"><li>The K-Nearest Neighbors (KNN) algorithm is a simple, easy-to-implement supervised machine learning algorithm that can be used to solve both classification and regression problems. The KNN algorithm assumes that similar things exist in close proximity. In other words, similar things are near to each other.</li></p>
+                            <a href="https://project4knn.herokuapp.com/"target="_blank"><button type="button" class="btn btn-outline-primary">K-Nearest Neighbour Model for Titanic Survival&#9655;</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="card mb-3">
+                    <div class="card">
+                        <p class="card-text"><center><b>Model Deployment QR Code:</b></center></p>
+                        <img style="max-height: 350px;" src="{{ url_for('static',filename = 'image/projectu.png')  }}"
+                        
+                        class="card-img-top" alt="...">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">Sentiment Analysis using NLP</h5>
+                            <p class="card-text"><li>Sentiment analysis is the process of classifying whether a block of text is positive, negative, or, neutral. Sentiment analysis is contextual mining of words which indicates the social sentiment of a brand and also helps the business to determine whether the product which they are manufacturing is going to make a demand in the market or not.</li></p>
+                            <a href="https://marufkhan-ahmad-nlpreviewsystemproject5-app-668lb8.streamlitapp.com/"target="_blank"><button type="button" class="btn btn-outline-primary">NLP Model for Sentiment Analysis&#9655;</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="card mb-3">
+                    <div class="card">
+                        <p class="card-text"><center><b>Model Deployment QR Code:</b></center></p>
+                        <img style="max-height: 350px;" src="{{ url_for('static',filename = 'image/projectr.png')  }}"
+                        
+                        class="card-img-top" alt="...">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">Placement Analysis</h5>
+                            <p class="card-text"><li>This modal is devloped by using these following modals:
+                                <ol><li>Nave Bayse Modal</li><li>Decision Tree Clacification Modal</li><li>KNN Clasification Modal</li><li>Random Forest Modal</li><li>Support Vector Machine Modal</li></ol>
+                            </li></p>
+                            <a href="https://educationproject6.herokuapp.com/"target="_blank"><button type="button" class="btn btn-outline-primary">Placement Analysis&#9655;</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="card mb-3">
+                    <div class="card">
+                        <p class="card-text"><center><b>Model Deployment QR Code:</b></center></p>
+                        <img style="max-height: 350px;" src="{{ url_for('static',filename = 'image/projectk.png')  }}"
+                        
+                        class="card-img-top" alt="...">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">Naive Bayes Classifier</h5>
+                            <p class="card-text"><li>Naive Bayes is a simple technique for constructing classifiers: models that assign class labels to problem instances, represented as vectors of feature values, where the class labels are drawn from some finite set. There is not a single algorithm for training such classifiers, but a family of algorithms based on a common principle: all naive Bayes classifiers assume that the value of a particular feature is independent of the value of any other feature, given the class variable.</li> </p>
+                            <a href="https://marufkhan-ahmad-restaurantreviewnaivebaiys-app-ntcwnu.streamlitapp.com/"target="_blank"><button type="button" class="btn btn-outline-primary">NAIVE BAYES CLASSIFIER&#9655;</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="card mb-3">
+                    <div class="card">
+                        <p class="card-text"><center><b>Model Deployment QR Code:</b></center></p>
+                        <img style="max-height: 350px;" src="{{ url_for('static',filename = 'image/minor_project.png')  }}"
+                        
+                        class="card-img-top" alt="...">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">Minor Project(Churn modelling)</h5>
+                            <p class="card-text"><li>This modal is devloped by using these following modals:
+                                <ol><li>Nave Bayse Modal</li><li>Decision Tree Clacification Modal</li><li>KNN Clasification Modal</li><li>Random Forest Modal</li><li>Support Vector Machine Modal</li></ol>
+                            </li></p>
+                            <a href="https://minorproject7.herokuapp.com/"target="_blank"><button type="button" class="btn btn-outline-primary">Minor Project (Churn modelling)&#9655;</button></a>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        </div>
+    </div>
+    <!-- <hr> -->
+    <br><br><br>
+    <div class="col-md-12">
+        <center><h3 class="section-title" style="text-align: center; color:black;">Sponsored By</h3></center>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <div class="card mb-3">
+                    
+                    <div class="card">
+                        <img style="max-height: 200px; border-radius: 25px;" src="{{ url_for('static',filename = 'image/AICTEIdeaLabFooterLogo.png')  }}"
+                        class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="text-align:center">IDEA LAB</h5>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-xs-12 col-md-4">
+                <div class="card mb-3">
+                    
+                    <div class="card">
+                        <img style="max-height: 200px; border-radius: 25px;" src="{{ url_for('static',filename = 'image/nbanew.png')  }}"
+                        class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="text-align:center">NBA</h5>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-xs-10 col-md-3">
+                <div class="card mb-3">
+
+                    <div class="card">
+                        <img style="max-height: 200px; border-radius: 25px;"
+                            src="{{ url_for('static',filename = 'image/aicte-logo.png')  }}"
+                            class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title"; style="text-align:center; color:black;">AICTE MODROB DEEP LEARNING LAB</h5>
+                            
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+            <script src="{{ url_for('static',filename = 'js/bootstrap.bundle.min.js')  }}"></script>
+            <script src="{{ url_for('static',filename = 'js/bootstrap.bundle.min.js')  }}"></script>
+        </div>
+    </div>    
+</body>
+</html>

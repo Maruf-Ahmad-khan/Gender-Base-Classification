@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    
+    <!-- Bootstrap CSS -->
+    <link href="{{ url_for('static',filename = 'css/bootstrap.min.css')  }}" rel="stylesheet">
+
+    <title>Gender Classification</title>
+
+    <style>
+        .form1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: fit-content;
+            flex-direction: column;
+            border: 2px solid #ccc;
+            background: navajowhite;
+        }
+
+        .a {
+            color: black;
+            background-color: goldenrod;
+        }
+
+        body {
+            background-color: springgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <nav style="width: 100%;" class="navbar navbar-dark bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
+                <img src="{{ url_for('static',filename = 'image/PIET logo with tagline.jpg') }}" class="img-fluid" style="border-radius: 25px; width: 100%; max-width: 600px;">
+            </a>
+            <div class="d-flex justify-content-center">
+                <a href="/aboutusnew" class="nav-link text-white mx-2">About Us</a>
+                <a href="/project" class="nav-link text-white mx-2">Project</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-5 d-none d-lg-block">
+                <img src="/static/image/Robot2.jpg" class="img-fluid" alt="Robot with headphones">
+
+
+            </div>
+            <div class="col-12 col-lg-7 p-4">
+                <h1 class="text-black"><b><i>Gender Classification Summer Internship 2022</i></b></h1>
+                <p class="mt-4" style="font-size: 20px; text-align: justify; color: #808000;">
+                    <i>It is a Internship project developed at Summer internship 2022 at Poornima Institute of Engineering & Technology, Jaipur. This Summer Internship 2022 on Artificial Intelligence and Data Science was conducted from 27 June 2022 to 14 August 2022.</i>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card mb-3">
+                    <div class="a">
+                        <marquee behavior="scroll" direction="left"><b>CLASSIFICATION OF GENDER BASED ON WEIGHT AND HEIGHT</b></marquee>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Model Deployment</h5>
+                        <div class="form1 p-4" style="border-radius: 25px;">
+                            <form action="{{ url_for('predict')}}" method="get" class="row g-3">
+                                <div class="col-12">
+                                    <label for="HEIGHT" class="form-label">Enter your Height</label>
+                                    <input type="number" class="form-control" id="HEIGHT" name="HEIGHT" step="any" min="120" max="200" required="required" placeholder="cm">
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <label for="WEIGHT" class="form-label">Enter your Weight</label>
+                                    <input type="number" class="form-control" id="WEIGHT" name="WEIGHT" step="any" min="34" max="130" required="required" placeholder="kg">
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <label for="Model" class="form-label">Choose a Model</label>
+                                    <select id="Model" name="Model" class="form-select" required>
+                                        <option selected>Random Forest Classifier</option>
+                                        <option>Decision Tree Classifier</option>
+                                        <option>KNN Classifier</option>
+                                        <option>SVM Classifier</option>
+                                        <option>Naive Bayes Classifier</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 mt-4 text-center">
+                                    <button type="submit" value="NB" name="NB" class="btn btn-outline-primary">Submit</button>
+                                </div>
+                            </form>
+                            <p class="mt-4 text-black">{{prediction_text}} {{extra_text}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3 class="section-title text-black">Sponsored By</h3>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 col-md-4 mb-3">
+                <div class="card">
+                    <img style="max-height: 200px; border-radius: 25px;" src="{{ url_for('static',filename = 'image/AICTEIdeaLabFooterLogo.png') }}" class="card-img-top img-fluid" alt="Idea Lab">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">IDEA LAB</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <div class="card">
+                    <img style="max-height: 200px; border-radius: 25px;" src="{{ url_for('static',filename = 'image/nbanew.png') }}" class="card-img-top img-fluid" alt="NBA">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">NBA</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <div class="card">
+                    <img style="max-height: 200px; border-radius: 25px;" src="{{ url_for('static',filename = 'image/aicte-logo.png') }}" class="card-img-top img-fluid" alt="AICTE MODROB DEEP LEARNING LAB">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-black">AICTE MODROB DEEP LEARNING LAB</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed-bottom">
+        <div class="bg-secondary" style="min-height: 40px;">
+            <marquee style="background-color: orange; color: black; margin-top: 7px;">
+                <h9>Developed by Maruf khan</h9>
+            </marquee>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static',filename = 'js/bootstrap.bundle.min.js') }}"></script>
+</body>
+
+</html>

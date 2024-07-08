@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <title>Gender Base Classification Aboutus</title>
+</head>
+
+<body>
+    <nav style="width: 100%;" class="navbar navbar-dark bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img style="width: 100%; border-radius: 25px;" src="{{ url_for('static', filename = 'image/PIET logo with tagline.jpg') }}" class="img-fluid" alt="PIET logo">
+            </a>
+            <div class="d-flex">
+                <a href="/" style="color:white; margin-right: 10px;">Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-5 d-none d-lg-block">
+                <img src="{{ url_for('static', filename = 'image/Department1.png') }}" class="img-fluid" alt="Department Image" style="min-height: 600px;">
+            </div>
+
+            <div class="col-12 col-lg-7 p-4">
+                <h1><b>About Us</b></h1>
+                <p style="font-size:20px; text-align:center; color:#808000">The Department of Computer Engineering was incepted in the year 2007 with the vision, “To create an environment in which new ideas, research and technology development and the technocrats and innovators of tomorrow become competent to face the global challenges”. In these academic years Department of Computer Engineering (CS), PIET has achieved a lot of success and earned many achievements. I am glad to inform that the Department has been accredited by the National Board of Accreditation (NBA) in the year 2017-18 and it is now in the elite list of departments in India. It has taken the initiative to start its own portal for home assignment submission and awarding marks. Many other software tools are also used which are developed by the faculty members and students of the Department such as cspiet.poornima.org, KYS, cstech.poornima.org. Because of all these efforts and teamwork, the Department has been recognized as one of the most innovative departments in Poornima Foundation.</p>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="text-center my-4" style="border-radius: 25px;">Contribution</h1>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xs-12 col-md-4">
+                <div class="card mb-4">
+                    <img style="max-height: 500px;" src="{{ url_for('static', filename = 'image/Maruf.jpg') }}" class="card-img-top img-fluid" alt="Developer Image">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Developer</h5>
+                        <p class="card-text text-justify">Maruf Khan, Student of Poornima Group of Institution</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p style="font-size:20px; text-align:center;">Hello! My name is Maruf Khan and I am pursuing my BTech from Poornima Group of Institution. My skills include C, C++, Python, Data Science, HTML5, CSS3, Java, and I also have good communication skills. My hobbies are playing cricket, singing, and learning new skills.</p>
+
+    <div class="container my-5">
+        <h1>Disclaimer</h1>
+        <p style="font-size:20px; text-align:center; color:red;">This website contains images and content obtained by routine Google Images/document searches. Some of these images/data may be under copyright. They are included here for educational and non-commercial purposes and are considered to be covered by the doctrine of Fair Use. In any event, they are easily available from Google Images/data. It's not feasible to give full scholarly credit to the creators of these images/data. We hope they can be satisfied with the positive role.</p>
+    </div>
+
+    <div class="fixed-bottom">
+        <div class="bg-secondary" style="min-height: 40px;">
+            <marquee style="color: #fff; margin-top: 7px;">
+                <h9>Developed by Maruf khan</h9>
+            </marquee>
+        </div>
+    </div>
+
+    <!-- change later -->
+    <script src="{{ url_for('static', filename = 'js/bootstrap.bundle.min.js') }}"></script>
+</body>
+
+</html>
